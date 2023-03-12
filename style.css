@@ -1,0 +1,164 @@
+body {
+    animation: transitionIn 2.75s;
+    background: #141414;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#banner{
+    background: url(marek-piwnicki-zCyoh2nGAqo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 170px;
+    backdrop-filter: 1;
+}
+.banner-text h1{
+    font-size: 40px;
+    
+}
+.banner-text p{
+    font-size: 40px;
+    color: white;
+}
+.banner-btn{
+    margin: 11px auto 0;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 0;
+    color: white;
+    background-color: black;
+    font-size: 12px;
+}
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+.banner-btn a:hover{
+    color: white;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Dexus2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 44px 30px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*----- Functions -----*/
+
+.Functions{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+h3{
+    color: white;
+}
+
+p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 2%;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #171717;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+        backdrop-filter: 1;
+    }   
+    
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#banner{
+    background: url(marek-piwnicki-zCyoh2nGAqo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
